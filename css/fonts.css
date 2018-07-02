@@ -1,0 +1,19 @@
+@font-face {
+	font-family: ibm_plex_sans_regular; /* Имя шрифта */
+	src: url(../fonts/IBMPlexSans-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: ibm_plex_sans_semi-bold; /* Имя шрифта */
+	src: url(../fonts/IBMPlexSans-SemiBold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: ibm_plex_sans_medium; /* Имя шрифта */
+	src: url(../fonts/IBMPlexSans-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: ibm_plex_sans_bold; /* Имя шрифта */
+	src: url(../fonts/IBMPlexSans-Bold.ttf); /* Путь к файлу со шрифтом */
+}

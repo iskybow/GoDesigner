@@ -1,0 +1,764 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/slick.css"/>
+	<link rel="stylesheet" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Go Designer</title>
+</head>
+<body>
+<div class="site-bg_white js_themeBody">
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="nav-menu">
+					<div class="nav-left">
+						<div class="nav-menu-logo">
+							<img src="img/logo.png">
+						</div>
+						<div class="nav-menu-items">
+							<ul class="nav-menu-li">
+								<li class="nav-li"><a href="#" ><img src="img/login.png">Вход</a></li>
+								<li class="nav-li"><a href="#" >Лента</a></li>
+								<li class="nav-li"><a href="#" >Как это работает</a></li>
+								<li class="nav-li"><a href="#" >Все проекты</a></li>
+								<li class="nav-li"><a href="#" >Блог</a></li>
+								<li class="nav-li"><a href="#" >Дизайнерам</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="nav-right">
+						<div class="nav-menu-number">
+							<p class="nav-number">Тел. <b>8 800 550 52 07</b></p>
+							<button type="button" class="nav-number-btn"><p><img src="img/support.png">Запросить помощь</p></button>
+						</div>
+						<div class="nav-menu-button">
+							<button type="button" class="nav-order">ЗАКАЗАТЬ ПРОЕКТ</button>
+						</div>
+						<div class="nav-menu-night-mode">
+							<button type="button" class="js_themeSwitcher"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="order-project">
+		<div class="container">
+			<div class="row">
+				<div class="order-project-form">
+					<div class="order-project-form-head">
+						<h3>Заказ дизайна и копирайтинга онлайн</h3>
+						<p>Максимум профессиональных решений по вашей цене</p>
+					</div>
+					<div class="order-project-form-choice">
+						<div class="order-project-form-left">
+							<form id="product">
+								<select class="cs-select" required>
+									<option value="" disabled selected>Что вам нужно?</option>
+									<option value="logo">Лого</option>
+									<option value="firmstyle">Фирменный стиль</option>
+									<option value="leaflets">Листовка</option>
+									<option value="advertising">Реклама</option>
+									<option value="site">Сайт</option>
+									<option value="copyrighted">Копирайт</option>
+									<option value="logo2">Лого</option>
+									<option value="firmstyle2">Фирменный стиль</option>
+									<option value="leaflets2">Листовка</option>
+									<option value="advertising2">Реклама</option>
+									<option value="site2">Сайт</option>
+									<option value="copyrighted1">Копирайт</option>
+								</select>
+								<div class="order-project-form-date">
+									<div class="order-project-form-datepicker">
+										<input type="text" required placeholder="Когда нужен результат?" class="datepicker">
+									</div>
+									<img src="img/date.png">
+								</div>
+								<div class="order-project-form-budget">
+									<p>От 11 800 р.*</p>
+									<input type="number" required min="11800" placeholder="Ваш бюджет">
+								</div>
+								<div class="order-project-form-submit">
+									<input type="submit" value="ПОКАЗАТЬ">
+								</div>
+							</form>
+						</div>
+						<div class="order-project-form-right">
+							<div class="order-project-form-right-up">
+								<div class="banner-1">
+									<img src="img/banner/banner-1.png">
+									<div class="banner-fon-1 substrate">
+										<p>Логотип в 1 клик</p>
+										<p>21 400 р.</p>
+									</div>
+								</div>
+								<div class="banner-2">
+									<img src="img/banner/banner-2.png">
+									<div class="banner-fon-2 substrate">
+										<p>Год бесплатных проектов</p>
+										<p>49 400 р.</p>
+									</div>
+								</div>
+								<div class="banner-3">
+									<img src="img/banner/banner-3.png">
+								</div>
+							</div>
+							<div class="order-project-form-right-down">
+								<div class="banner-4">
+									<img src="img/banner/banner-4.png">
+								</div>
+								<div class="banner-5">
+									<img src="img/banner/banner-5.png">
+									<div class="banner-fon-5 substrate">
+										<p>Лейдинг или страница сайта</p>
+										<p>25 000 p.</p>
+									</div>
+								</div>
+								<div class="banner-6">
+									<img src="img/banner/banner-6.png">
+									<div class="banner-fon-6 substrate">
+										<p>Найминг</p>
+										<p>18 000 p.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-project-form-head">
+						<h3>Заказ дизайна и копирайтинга онлайн</h3>
+						<p>Максимум профессиональных решений по вашей цене</p>
+					</div>
+					<div class="order-project-form-choice-2">
+						<div class="order-project-form-left">
+							<form>
+								<select class="cs-select" required>
+									<option value="" disabled selected>Что вам нужно?</option>
+									<option value="logo">Лого</option>
+									<option value="firmstyle">Фирменный стиль</option>
+									<option value="leaflets">Листовка</option>
+									<option value="advertising">Реклама</option>
+									<option value="site">Сайт</option>
+									<option value="copyrighted">Копирайт</option>
+									<option value="logo2">Лого</option>
+									<option value="firmstyle2">Фирменный стиль</option>
+									<option value="leaflets2">Листовка</option>
+									<option value="advertising2">Реклама</option>
+									<option value="site2">Сайт</option>
+									<option value="copyrighted1">Копирайт</option>
+								</select>
+								<div class="order-project-form-date">
+									<div class="order-project-form-datepicker">
+										<input type="text" required placeholder="Когда нужен результат?" class="datepicker">
+									</div>
+									<img src="img/date.png">
+								</div>
+								<div class="order-project-form-budget">
+									<p>От 11 800 р.*</p>
+									<input type="number" required min="11800" placeholder="Ваш бюджет">
+								</div>
+								<div class="order-project-form-submit">
+									<input type="submit" value="ПОКАЗАТЬ">
+								</div>
+							</form>
+						</div>
+						<div class="order-project-form-right-2">
+							<div class="order-project-form-right-up-2">
+								<div class="banner-2-1">
+									<button>
+										<img src="img/banner-2/banner-2-1.png">
+										<div class="banner-fon-2-1">
+											<p>Логотип в 1 клик</p>
+											<p>21 400 р.</p>
+										</div>
+									</button>
+								</div>
+								<div class="banner-2-2">
+									<button>
+										<img src="img/banner-2/banner-2-2.png">
+										<div class="banner-fon-2-2">
+											<p>Год бесплатных проектов</p>
+											<p>49 400 р.</p>
+										</div>
+									</button>
+								</div>
+								<div class="banner-2-3">
+									<button>
+										<img src="img/banner-2/banner-2-3.png">
+									</button>
+								</div>
+							</div>
+							<div class="order-project-form-right-down-2">
+								<div class="banner-2-4">
+									<button>
+										<img src="img/banner-2/banner-2-4.png">
+									</button>
+								</div>
+								<div class="banner-2-5">
+									<button>
+										<img src="img/banner-2/banner-2-5.png">
+										<div class="banner-fon-2-5">
+											<p>Лейдинг или страница сайта</p>
+											<p>25 000 p.</p>
+										</div>
+									</button>
+								</div>
+								<div class="banner-2-6">
+									<button>
+										<img src="img/banner-2/banner-2-6.png">
+										<div class="banner-fon-2-6">
+											<p>Найминг</p>
+											<p>18 000 p.</p>
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="searching-results-fon">
+		<div class="container">
+			<div class="row">
+				<div class="searching-results">
+					<div class="searching-results-head">
+						<h6>РЕЗУЛЬТАТЫ ПОИСКА</h6>
+						<div class="searching-results-head-hr">
+							<hr>
+						</div>
+					</div>
+					<div class="searching-results-block">
+						<div class="searching-results-block-left">
+							<p>Срок: <span>от 14 дней</span></p>
+							<p>Решений: <span>~25</span></p>
+							<p>Стоимость: <span>20 000 р.</span></p>
+							<button>ЗАКАЗАТЬ</button>
+						</div>
+						<div class="searching-results-block-right">
+							<div class="searching-results-block-right-head">
+								<p>Примеры проектов:</p>
+							</div>
+							<div class="searching-results-block-example">
+								<button class="searching-results-block-example-1">
+									<img src="img/result/result-1.png">
+									<div class="searching-results-block-example-fon-1"></div>
+									<div class="searching-results-block-example-fon-arrow-1">
+										<img src="img/result/result-0.png">
+									</div>
+								</button>
+								<button class="searching-results-block-example-2">
+									<img src="img/result/result-2.png">
+									<div class="searching-results-block-example-fon-2"></div>
+									<div class="searching-results-block-example-fon-arrow-2">
+										<img src="img/result/result-0.png">
+									</div>
+								</button>
+								<button class="searching-results-block-example-3">
+									<img src="img/result/result-2.png">
+									<div class="searching-results-block-example-fon-3"></div>
+									<div class="searching-results-block-example-fon-arrow-3">
+										<img src="img/result/result-0.png">
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="additional">
+		<div class="container">
+			<div class="row">
+				<div class="additional-offers">
+					<div class="additional-offers-head">
+						<h6>ДОПОЛНИТЕЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h6>
+						<div class="additional-offers-head-hr">
+							<hr>
+						</div>
+					</div>
+					<div class="additional-offers-1">
+						<p>Эконом</p>
+						<div class="additional-offers-1-hr-1">
+							<hr>
+						</div>
+						<p>срок: 10 дней;</p>
+						<div class="additional-offers-1-hr-2">
+							<hr>
+						</div>
+						<p>решений: 60;</p>
+						<div class="additional-offers-1-hr-2">
+							<hr>
+						</div>
+						<p>стоимость: 15 000 р.</p>
+						<button>ЗАКАЗАТЬ</button>
+					</div>
+					<div class="additional-offers-2">
+						<p>Базовый</p>
+						<div class="additional-offers-1-hr-1">
+							<hr>
+						</div>
+						<p>срок: 14 дней;</p>
+						<div class="additional-offers-1-hr-2">
+							<hr>
+						</div>
+						<p>решений: 100;</p>
+						<div class="additional-offers-1-hr-2">
+							<hr>
+						</div>
+						<p>стоимость: 25 000 р.</p>
+						<button>ЗАКАЗАТЬ</button>
+					</div>
+					<div class="additional-offers-3">
+						<p>Премиум</p>
+						<div class="additional-offers-1-hr-1">
+							<hr>
+						</div>
+						<p>срок: 10 дней;</p>
+						<div class="additional-offers-1-hr-2">
+							<hr>
+						</div>
+						<p>решений: 200;</p>
+						<div class="additional-offers-1-hr-2">
+							<hr>
+						</div>
+						<p>стоимость: 30 000 р.</p>
+						<button>ЗАКАЗАТЬ</button>
+					</div>
+					<div class="additional-offers-recomend">
+						<p>РЕКОМЕНДУЕМ:</p>
+					</div>
+					<div class="additional-offers-4">
+						<p>Лого в один клик</p>
+						<p>срок: 10 дней;</p>
+						<div class="additional-offers-1-hr-2">
+							<hr>
+						</div>
+						<p>решений: 100;</p>
+						<div class="additional-offers-1-hr-2">
+							<hr>
+						</div>
+						<p>стоимость: 21 400 р.</p>
+						<button>ЗАКАЗАТЬ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advantages-fon">
+		<div class="container">
+			<div class="row">
+				<div class="advantages">
+					<div class="block-num">
+						<div class="block-number">
+							<p>.02</p>
+						</div>
+						<div class="block-head">
+							<h6>ПРЕИМУЩЕСТВА</h6>
+							<div class="advantages-head-hr">
+								<hr>
+							</div>
+						</div>
+					</div>
+					<div class="advantages-items">
+						<div class="advantages-item">
+							<img src="img/advantages/advantages-1.png">
+							<h3>Вы определяету бюджет</h3>
+							<p>Вы сами решаете, сколько
+								платить исполнителю. Сервисный
+								сбор GoDesigner составит -30,5-
+								-39,5% установленной суммы
+								вознаграждения побудителю</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/advantages/advantages-2.png">
+							<h3>Больше решений за те же деньги</h3>
+							<p>Если вы обратитесь в агенство,
+									вам предоставят 3 варианта
+									на выбор. На GoDesigner вы
+									получите ~100 решений
+									на задачу</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/advantages/advantages-3.png">
+							<h3>Интерактивно и оперативно</h3>
+							<p>Из-за отсутствий рутинной
+									документации, вы увилите
+									решения сразу, как только
+									исполнители загрузят свои
+									идеи на сайт</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="examples-projects">
+		<div class="container">
+			<div class="row">
+				<div class="examples">
+					<div class="block-num">
+						<div class="block-number">
+							<p>.03</p>
+						</div>
+						<div class="block-head">
+							<h6>ПРИМЕРЫ ПРОЕКТОВ</h6>
+							<div class="examples-head-hr">
+								<hr>
+							</div>
+						</div>
+					</div>
+					<div class="examples-block">
+						<div class="examples-left">
+							<button class="btn_project" onclick="openExamples(event, 'Sitedesign')"  id="defaultOpen">Дизайн сайта</button>
+							<button class="btn_project" onclick="openExamples(event, 'Formstyle')">Фирменный стиль</button>
+							<button class="btn_project" onclick="openExamples(event, 'Microprojects')">Микропроекты</button>
+							<button class="btn_project" onclick="openExamples(event, 'Сopyrighted')">Копирайтинг</button>
+							<button class="btn_project" onclick="openExamples(event, 'Logo')">Логотип</button>
+						</div>
+						<div class="examples-right">
+							<div id="Sitedesign" class="item_project">
+								<div class="examples-item">
+									<img src="img/examples/item-1.png">
+									<div class="item-text">
+										<h6>«Smart Sites»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-1">20 000 р.</span></p>
+										<p>Кол-во решений: 15</p>
+										<p>Срок: 14 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-2.png">
+									<div class="item-text">
+										<h6>«Сайт ведущего»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-2">40 000 р.</span></p>
+										<p>Кол-во решений: 24</p>
+										<p>Срок: 22 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-3.png">
+									<div class="item-text">
+										<h6>«Агенство Method»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-3">77 000 р.</span></p>
+										<p>Кол-во решений: 16</p>
+										<p>Срок: 12 дней</p>
+									</div>
+								</div>
+							</div>
+							<div id="Formstyle" class="item_project">
+								<div class="examples-item">
+									<img src="img/examples/item-2.png">
+									<div class="item-text">
+										<h6>«Сайт ведущего»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-1">40 000 р.</span></p>
+										<p>Кол-во решений: 24</p>
+										<p>Срок: 22 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-1.png">
+									<div class="item-text">
+										<h6>«Smart Sites»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-2">20 000 р.</span></p>
+										<p>Кол-во решений: 15</p>
+										<p>Срок: 14 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-3.png">
+									<div class="item-text">
+										<h6>«Агенство Method»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-3">77 000 р.</span></p>
+										<p>Кол-во решений: 16</p>
+										<p>Срок: 12 дней</p>
+									</div>
+								</div>
+							</div>
+							<div id="Microprojects" class="item_project">
+								<div class="examples-item">
+									<img src="img/examples/item-1.png">
+									<div class="item-text">
+										<h6>«Smart Sites»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-1">20 000 р.</span></p>
+										<p>Кол-во решений: 15</p>
+										<p>Срок: 14 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-2.png">
+									<div class="item-text">
+										<h6>«Сайт ведущего»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-2">40 000 р.</span></p>
+										<p>Кол-во решений: 24</p>
+										<p>Срок: 22 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-3.png">
+									<div class="item-text">
+										<h6>«Агенство Method»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-3">77 000 р.</span></p>
+										<p>Кол-во решений: 16</p>
+										<p>Срок: 12 дней</p>
+									</div>
+								</div>
+							</div>
+							<div id="Сopyrighted" class="item_project">
+								<div class="examples-item">
+									<img src="img/examples/item-1.png">
+									<div class="item-text">
+										<h6>«Smart Sites»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-1">20 000 р.</span></p>
+										<p>Кол-во решений: 15</p>
+										<p>Срок: 14 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-2.png">
+									<div class="item-text">
+										<h6>«Сайт ведущего»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-2">40 000 р.</span></p>
+										<p>Кол-во решений: 24</p>
+										<p>Срок: 22 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-3.png">
+									<div class="item-text">
+										<h6>«Агенство Method»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-3">77 000 р.</span></p>
+										<p>Кол-во решений: 16</p>
+										<p>Срок: 12 дней</p>
+									</div>
+								</div>
+							</div>
+							<div id="Logo" class="item_project">
+								<div class="examples-item">
+									<img src="img/examples/item-1.png">
+									<div class="item-text">
+										<h6>«Smart Sites»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-1">20 000 р.</span></p>
+										<p>Кол-во решений: 15</p>
+										<p>Срок: 14 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-2.png">
+									<div class="item-text">
+										<h6>«Сайт ведущего»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-2">40 000 р.</span></p>
+										<p>Кол-во решений: 24</p>
+										<p>Срок: 22 дней</p>
+									</div>
+								</div>
+								<div class="examples-item">
+									<img src="img/examples/item-3.png">
+									<div class="item-text">
+										<h6>«Агенство Method»</h6>
+										<hr>
+										<p>Награда: <span class="item-span-3">77 000 р.</span></p>
+										<p>Кол-во решений: 16</p>
+										<p>Срок: 12 дней</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="experts-section">
+		<div class="container">
+			<div class="row">
+				<div class="experts">
+					<div class="expert">
+						<img src="img/experts-1.png">
+						<div class="expert_info">
+							<h3>Опытные эксперты помогут вам с выбором варианта</h3>
+							<a href="#">Подробнее...</a>
+							<h4>Сергей Кожара</h4>
+							<p>Креативный директор и
+									совладелец студии визуального
+									продакшена Special One</p>
+						</div>
+					</div>
+					<div class="expert">
+						<img src="img/experts-1.png">
+						<div class="expert_info">
+							<h3>Опытные эксперты помогут вам с выбором варианта</h3>
+							<a href="#">Подробнее...</a>
+							<h4>Сергей Кожара</h4>
+							<p>Креативный директор и
+								совладелец студии визуального
+								продакшена Special One</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="statistics-section">
+		<div class="container">
+			<div class="row">
+				<div class="statistics">
+					<div class="project">
+						<h3>3 586</h3>
+						<p>Завершенных проектов</p>
+					</div>
+					<hr>
+					<div class="users_reg">
+						<h3>43 776</h3>
+						<p>Исполнителей зарегестрировано на сайте</p>
+					</div>
+					<hr>
+					<div class="new_idea">
+						<h3>191</h3>
+						<p>Новых идей загружено за последние 24 часа</p>
+					</div>
+					<hr>
+					<div class="standing">
+						<h3>6 лет</h3>
+						<p>стаж работы</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews-section">
+		<div class="container">
+			<div class="row">
+				<div class="reviews">
+					<div class="block-num">
+						<div class="block-number">
+							<p>.04</p>
+						</div>
+						<div class="block-head">
+							<h6>ОТЗЫВЫ</h6>
+							<div class="examples-head-hr">
+								<hr>
+							</div>
+						</div>
+					</div>
+					<div class="reviews_block">
+						<div class="review">
+							<img src="img/reviews.png">
+							<p>Спасибо за работу! Интересная площадка.
+									Для нас это был первый опыт. Оцениваем
+									его как положительный.</p>
+						</div>
+						<div class="review">
+							<img src="img/reviews.png">
+							<p>Большое количество адекватных
+									дизайнеров. Это радует. Есть всегда
+									большой выбор предложений.
+									Очень рад сотрудничествуБольшое количество адекватных
+								дизайнеров. Это радует. Есть всегда
+								большой выбор предложений.
+								Очень рад сотрудничеств</p>
+						</div>
+						<div class="review">
+							<img src="img/reviews.png">
+							<p>Многие работы достойны
+									положительной оценки, очень рад,
+									что удалось-таки выбрать наиболее
+									подходящую под наши запросы.</p>
+						</div>
+						<div class="review">
+							<img src="img/reviews.png">
+							<p>Спасибо за работу! Интересная площадка.
+								Для нас это был первый опыт. Оцениваем
+								его как положительный.</p>
+						</div>
+						<div class="review">
+							<img src="img/reviews.png">
+							<p>Спасибо за работу! Интересная площадка.
+								Для нас это был первый опыт. Оцениваем
+								его как положительный.</p>
+						</div>
+						<div class="review">
+							<img src="img/reviews.png">
+							<p>Спасибо за работу! Интересная площадка.
+								Для нас это был первый опыт. Оцениваем
+								его как положительный.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer_nav">
+					<div class="footer_menu">
+						<ul class="footer_menu-ul">
+							<li><a href="#" >О проекте</a></li>
+							<li><a href="#" >Как это работает</a></li>
+							<li><a href="#" >Логотип в один клик</a></li>
+							<li><a href="#" >Помощь</a></li>
+							<li><a href="#" >Контакты</a></li>
+							<li><a href="#" >Создать проект</a></li>
+						</ul>
+					</div>
+					<div class="footer_menu">
+					 <ul class="footer_menu-ul">
+						 <li><a href="#" >Конфиденциальность</a></li>
+						 <li><a href="#" >Блог</a></li>
+						 <li><a href="#" >Золотая рыбка</a></li>
+						 <li><a href="#" >Абонентское обслуживание</a></li>
+					 </ul>
+					</div>
+					<div class="footer_social">
+						<div class="social_social">
+							<ul>
+								<a href="#"><li class="facebook"></li></a>
+								<a href="#"><li class="twitter"></li></a>
+								<a href="#"><li class="vk"></li></a>
+								<a href="#"><li class="instagram"></li></a>
+							</ul>
+						</div>
+						<div class="social_card"></div>
+					</div>
+				</div>
+				<div class="footer_hr"><hr></div>
+				<div class="footer_coop">
+					<p>Опубликуй бриф на сайте и получи дизайн за лучшую цену. Если вы
+							хотите иметь действительно большой выбор - вам к нам!</p>
+					<p>&copy; 2012-2018 Go Designer</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js_plugins/jquery-datepicker.js"></script>
+<script src="js_plugins/slick/slick/slick.min.js"></script>
+<script src="js_plugins/jQuery.dotdotdot-master/dist/jquery.dotdotdot.js"></script>
+<script src="js/mainPage.js"></script>
+</body>
+</html>
