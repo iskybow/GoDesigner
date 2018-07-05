@@ -106,4 +106,21 @@ $( function() {
                          true: Monitors the wrapper width and height;
                          "window": Monitors the window width and height. */
     });
+
+    $(document).on('click', '.js_clickSelect', function () {
+        var parent = $(this).closest(".select-block");
+        parent.addClass('select-block-active');
+        parent.find($('.selectUl')).fadeIn();
+    });
+
+    $('.selectUl').mCustomScrollbar();
+
+    });
+
+$(document).on('click', '.selectLi', function (e) {
+    e.stopPropagation();
+    var parent = $(this).closest('.select-block');
+    parent.find('input').val($(this).text());
+    parent.removeClass('select-block-active');
+    parent.find($('.selectUl')).fadeOut();
 });

@@ -13,6 +13,8 @@
     "jquery-datepicker": "^1.12.3",
     "jquery-ui": "^1.12.1",
     "jquery.dotdotdot": "^3.2.2",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "simplebar": "^2.6.1",
     "slick-carousel": "^1.8.1"
   }
 }

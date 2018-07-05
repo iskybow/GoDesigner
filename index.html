@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/slick-theme.css"/>
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Go Designer</title>
 </head>
@@ -59,21 +60,25 @@
 					<div class="order-project-form-choice">
 						<div class="order-project-form-left">
 							<form id="product">
-								<select class="cs-select" required>
-									<option value="" disabled selected>Что вам нужно?</option>
-									<option value="logo">Лого</option>
-									<option value="firmstyle">Фирменный стиль</option>
-									<option value="leaflets">Листовка</option>
-									<option value="advertising">Реклама</option>
-									<option value="site">Сайт</option>
-									<option value="copyrighted">Копирайт</option>
-									<option value="logo2">Лого</option>
-									<option value="firmstyle2">Фирменный стиль</option>
-									<option value="leaflets2">Листовка</option>
-									<option value="advertising2">Реклама</option>
-									<option value="site2">Сайт</option>
-									<option value="copyrighted1">Копирайт</option>
-								</select>
+								<div class="select-block">
+									<div class="selectInput">
+										<input type="text" class="select-text js_clickSelect" required placeholder="Что вам нужно?">
+									</div>
+									<ul class="selectUl ulNoneBlock js_clickSelect">
+										<li class="selectLi" value="logo">Лого</li>
+										<li class="selectLi" value="firmstyle">Фирменный стиль</li>
+										<li class="selectLi" value="leaflets">Листовка</li>
+										<li class="selectLi" value="advertising">Реклама</li>
+										<li class="selectLi" value="site">Сайт</li>
+										<li class="selectLi" value="copyrighted">Копирай</li>
+										<li class="selectLi" value="logo2">Лого</li>
+										<li class="selectLi" value="firmstyle2">Фирменный стиль</li>
+										<li class="selectLi" value="leaflets2">Листовка</li>
+										<li class="selectLi" value="advertising2">Реклама</li>
+										<li class="selectLi" value="site2">Сайт</li>
+										<li class="selectLi" value="copyrighted2">Копирай</li>
+									</ul>
+								</div>
 								<div class="order-project-form-date">
 									<div class="order-project-form-datepicker">
 										<input type="text" required placeholder="Когда нужен результат?" class="datepicker">
@@ -137,21 +142,25 @@
 					<div class="order-project-form-choice-2">
 						<div class="order-project-form-left">
 							<form>
-								<select class="cs-select" required>
-									<option value="" disabled selected>Что вам нужно?</option>
-									<option value="logo">Лого</option>
-									<option value="firmstyle">Фирменный стиль</option>
-									<option value="leaflets">Листовка</option>
-									<option value="advertising">Реклама</option>
-									<option value="site">Сайт</option>
-									<option value="copyrighted">Копирайт</option>
-									<option value="logo2">Лого</option>
-									<option value="firmstyle2">Фирменный стиль</option>
-									<option value="leaflets2">Листовка</option>
-									<option value="advertising2">Реклама</option>
-									<option value="site2">Сайт</option>
-									<option value="copyrighted1">Копирайт</option>
-								</select>
+								<div class="select-block">
+									<div class="selectInput">
+										<input type="text" class="select-text js_clickSelect" required placeholder="Что вам нужно?">
+									</div>
+									<ul class="selectUl ulNoneBlock js_clickSelect" data-simplebar>
+										<li class="selectLi" value="logo">Лого</li>
+										<li class="selectLi" value="firmstyle">Фирменный стиль</li>
+										<li class="selectLi" value="leaflets">Листовка</li>
+										<li class="selectLi" value="advertising">Реклама</li>
+										<li class="selectLi" value="site">Сайт</li>
+										<li class="selectLi" value="copyrighted">Копирай</li>
+										<li class="selectLi" value="logo2">Лого</li>
+										<li class="selectLi" value="firmstyle2">Фирменный стиль</li>
+										<li class="selectLi" value="leaflets2">Листовка</li>
+										<li class="selectLi" value="advertising2">Реклама</li>
+										<li class="selectLi" value="site2">Сайт</li>
+										<li class="selectLi" value="copyrighted2">Копирай</li>
+									</ul>
+								</div>
 								<div class="order-project-form-date">
 									<div class="order-project-form-datepicker">
 										<input type="text" required placeholder="Когда нужен результат?" class="datepicker">
@@ -677,7 +686,8 @@
 									Очень рад сотрудничествуБольшое количество адекватных
 								дизайнеров. Это радует. Есть всегда
 								большой выбор предложений.
-								Очень рад сотрудничеств</p>
+								Очень рад сотрудничеств
+							</p>
 						</div>
 						<div class="review">
 							<img src="img/reviews.png">
@@ -759,6 +769,7 @@
 <script src="js_plugins/jquery-datepicker.js"></script>
 <script src="js_plugins/slick/slick/slick.min.js"></script>
 <script src="js_plugins/jQuery.dotdotdot-master/dist/jquery.dotdotdot.js"></script>
+<script src="js_plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
 <script src="js/mainPage.js"></script>
 </body>
 </html>

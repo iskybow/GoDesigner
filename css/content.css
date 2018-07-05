@@ -49,63 +49,75 @@
 	padding-left: 0;
 }
 
-.cs-select {
+.select-block {
+	position: relative;
+}
+
+.select-text {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	width: 200px;
 	height: 42px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	position: relative;
-	background: transparent;
-	border: none;
-	color: #757575;
+	justify-content: space-evenly;
 	font-size: 12px;
-	padding-left: 15px;
+	cursor: pointer;
+	padding-left: 20px;
 	outline: none;
-	transition: top ease 5s;
+	position: relative;
+	background-color: transparent;
 }
 
-.site-bg_white .cs-select {
+.site-bg_white .select-text {
 	border: 1px solid #CFD1D9;
+	color: #757575;
 }
 
-.site-bg_black .cs-select {
+.site-bg_black .select-text {
 	border: 1px solid #60697F;
+	color: #757575;
 }
 
-/*.order-project-form-button {*/
-	/*display: flex;*/
-	/*flex-direction: row;*/
-	/*align-items: center;*/
-/*}*/
+.selectInput:after {
+	position: absolute;
+	content: "\25BC";
+	color: #60697F;
+	display: flex;
+	top: 13px;
+	right: 19px;
+	pointer-events: none;
+	font-size: 11px;
+}
 
-/*.order-project-form-button img {*/
-	/*height: 7px;*/
-	/*width: 10px;*/
-/*}*/
+.select-text:hover {
+	border: 1px solid #8F9EBF;
+}
 
-/*.order-project-form-button p {*/
-	/*font-family: ibm_plex_sans_regular, sans-serif;*/
-	/*font-size: 12px;*/
-	/*padding-right: 60px;*/
-	/*color: #757575;*/
-/*}*/
+.select-block-active .selectInput:after {
+	transform: rotate(180deg);
+}
 
+.selectUl {
+	background-color: #DFE0E3;
+	padding: 5px 0;
+	height: 223px;
+	width: 175px;
+	left: 130px;
+	overflow: auto;
+	position: absolute;
+	display: none;
+}
 
-/*.order-project-form-left .order-project-form-button-select select {*/
-	/*display: none;*/
-/*}*/
+.selectUl li {
+	list-style: none;
+	margin: 2px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
 
-/*.order-project-form-left .order-project-form-button-select select option {*/
-	/*padding: 10px;*/
-/*}*/
-
-/*.order-project-form-left .order-project-form-button-select:hover select {*/
-	/*display: flex;*/
-	/*position: absolute;*/
-	/*top: 42px;*/
-	/*left: 100px;*/
-/*}*/
+.selectUl li:hover {
+	background-color: #D1D3D9;
+}
 
 .order-project-form-left .order-project-form-date {
 	display: flex;
@@ -123,6 +135,12 @@
 
 .site-bg_black .order-project-form-date {
 	border: 1px solid #60697F;
+}
+
+.order-project-form input[type=number]::-webkit-inner-spin-button,
+.order-project-form input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 .order-project-form-left .order-project-form-date:hover {
@@ -163,6 +181,7 @@
 	color: #272B34;
 	padding: 20px;
 	background-color: transparent;
+	outline: none;
 }
 
 .site-bg_white .order-project-form-budget input {
@@ -1486,5 +1505,21 @@ width: 145px;
 	.statistics-section .statistics hr {
 		width: 150px;
 		height: 1px;
+	}
+	.order-project-form-right-up,
+	.order-project-form-right-down {
+		flex-direction: column;
+		align-items: center;
+	}
+	.banner-1, .banner-2, .banner-3, .banner-4, .banner-5, .banner-6 {
+		margin: 10px 0;
+	}
+	.order-project-form-right-up-2,
+	.order-project-form-right-down-2 {
+		flex-direction: column;
+		align-items: center;
+	}
+	.banner-2-1, .banner-2-2, .banner-2-3, .banner-2-4, .banner-2-5, .banner-2-6 {
+		margin: 10px 0;
 	}
 }
