@@ -10,6 +10,146 @@ button:active {
 	outline: none;
 }
 
+.row
+{display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	margin-right:-15px;
+	margin-left:-15px
+}
+
+.container {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}
+@media (min-width:576px){
+	.container {
+		max-width:540px
+	}
+}
+
+@media (min-width:768px) {
+	.container {
+		max-width:720px
+	}
+}
+
+@media (min-width:992px) {
+	.container {max-width:960px
+	}
+}
+
+@media (min-width:1200px) {
+	.container {max-width:1140px
+	}
+}
+.container-fluid
+{width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: .5rem
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin-bottom: .5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	color: inherit
+}
+
+.h1, h1 {
+	font-size: 2.5rem
+}
+
+.h2, h2 {
+	font-size: 2rem
+}
+
+.h3, h3 {
+	font-size: 1.75rem
+}
+
+.h4, h4 {
+	font-size: 1.5rem
+}
+
+.h5, h5 {
+	font-size: 1.25rem
+}
+
+.h6, h6 {
+	font-size: 1rem
+}
+
+*, ::after, ::before {
+	box-sizing: border-box
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem
+}
+
+dl, ol, ul {
+	margin-top: 0;
+	margin-bottom: 1rem
+}
+
+ol ol, ol ul, ul ol, ul ul {
+	margin-bottom: 0
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects
+}
+
+a:hover {
+	color: #0056b3;
+	text-decoration: underline
+}
+
+button {
+	border-radius: 0
+}
+
+button:focus {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+button, input, optgroup, select, textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit
+}
+
+button, input {
+	overflow: visible
+}
+
+button, select {
+	text-transform: none
+}
+
+body {
+	font-family: ibm_plex_sans_regular, sans-serif;
+	font-size: 12px;
+}
 
 .header {
 	font-family: ibm_plex_sans_regular, sans-serif;
