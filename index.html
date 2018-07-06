@@ -35,10 +35,10 @@
 					<div class="nav-right">
 						<div class="nav-menu-number">
 							<p class="nav-number">Тел. <b>8 800 550 52 07</b></p>
-							<button type="button" class="nav-number-btn"><p><img src="img/support.png">Запросить помощь</p></button>
+							<a href="#" class="nav-number-btn"><p><img src="img/support.png">Запросить помощь</p></a>
 						</div>
 						<div class="nav-menu-button">
-							<button type="button" class="nav-order">ЗАКАЗАТЬ ПРОЕКТ</button>
+							<a href="#" class="nav-order">ЗАКАЗАТЬ ПРОЕКТ</a>
 						</div>
 						<div class="nav-menu-night-mode">
 							<button type="button" class="js_themeSwitcher"></button>
@@ -61,7 +61,7 @@
 							<form id="product">
 								<div class="select-block">
 									<div class="selectInput">
-										<input type="text" class="select-text js_clickSelect" required placeholder="Что вам нужно?">
+										<input type="text" id="select" class="select-text js_clickSelect js_inputVal" value="" required placeholder="Что вам нужно?">
 									</div>
 									<ul class="selectUl ulNoneBlock js_clickSelect">
 										<li class="selectLi" value="logo">Лого</li>
@@ -80,151 +80,57 @@
 								</div>
 								<div class="order-project-form-date">
 									<div class="order-project-form-datepicker">
-										<input type="text" required placeholder="Когда нужен результат?" class="datepicker">
+										<input type="text" id="data" required placeholder="Когда нужен результат?" class="datepicker js_inputVal">
 									</div>
 									<img src="img/date.png">
 								</div>
 								<div class="order-project-form-budget">
 									<p>От 11 800 р.*</p>
-									<input type="number" required min="11800" placeholder="Ваш бюджет">
+									<input type="number" id="budget" required min="11800" placeholder="Ваш бюджет" class="js_inputVal">
 								</div>
 								<div class="order-project-form-submit">
-									<input type="submit" value="ПОКАЗАТЬ">
+									<input type="submit" id="view" class="js_submitVal" disabled="disabled" value="ПОКАЗАТЬ">
 								</div>
 							</form>
 						</div>
 						<div class="order-project-form-right">
 							<div class="order-project-form-right-up">
-								<div class="banner-1">
+								<a href="#" class="banner-1">
 									<img src="img/banner/banner-1.png">
 									<div class="banner-fon-1 substrate">
 										<p>Логотип в 1 клик</p>
 										<p>21 400 р.</p>
 									</div>
-								</div>
-								<div class="banner-2">
+								</a>
+								<a href="#" class="banner-2">
 									<img src="img/banner/banner-2.png">
 									<div class="banner-fon-2 substrate">
 										<p>Год бесплатных проектов</p>
 										<p>49 400 р.</p>
 									</div>
-								</div>
-								<div class="banner-3">
+								</a>
+								<a href="#" class="banner-3">
 									<img src="img/banner/banner-3.png">
-								</div>
+								</a>
 							</div>
 							<div class="order-project-form-right-down">
-								<div class="banner-4">
+								<a href="#" class="banner-4">
 									<img src="img/banner/banner-4.png">
-								</div>
-								<div class="banner-5">
+								</a>
+								<a href="#" class="banner-5">
 									<img src="img/banner/banner-5.png">
 									<div class="banner-fon-5 substrate">
 										<p>Лейдинг или страница сайта</p>
 										<p>25 000 p.</p>
 									</div>
-								</div>
-								<div class="banner-6">
+								</a>
+								<a href="#" class="banner-6">
 									<img src="img/banner/banner-6.png">
 									<div class="banner-fon-6 substrate">
 										<p>Найминг</p>
 										<p>18 000 p.</p>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="order-project-form-head">
-						<h3>Заказ дизайна и копирайтинга онлайн</h3>
-						<p>Максимум профессиональных решений по вашей цене</p>
-					</div>
-					<div class="order-project-form-choice-2">
-						<div class="order-project-form-left">
-							<form>
-								<div class="select-block">
-									<div class="selectInput">
-										<input type="text" class="select-text js_clickSelect" required placeholder="Что вам нужно?">
-									</div>
-									<ul class="selectUl ulNoneBlock js_clickSelect" data-simplebar>
-										<li class="selectLi" value="logo">Лого</li>
-										<li class="selectLi" value="firmstyle">Фирменный стиль</li>
-										<li class="selectLi" value="leaflets">Листовка</li>
-										<li class="selectLi" value="advertising">Реклама</li>
-										<li class="selectLi" value="site">Сайт</li>
-										<li class="selectLi" value="copyrighted">Копирай</li>
-										<li class="selectLi" value="logo2">Лого</li>
-										<li class="selectLi" value="firmstyle2">Фирменный стиль</li>
-										<li class="selectLi" value="leaflets2">Листовка</li>
-										<li class="selectLi" value="advertising2">Реклама</li>
-										<li class="selectLi" value="site2">Сайт</li>
-										<li class="selectLi" value="copyrighted2">Копирай</li>
-									</ul>
-								</div>
-								<div class="order-project-form-date">
-									<div class="order-project-form-datepicker">
-										<input type="text" required placeholder="Когда нужен результат?" class="datepicker">
-									</div>
-									<img src="img/date.png">
-								</div>
-								<div class="order-project-form-budget">
-									<p>От 11 800 р.*</p>
-									<input type="number" required min="11800" placeholder="Ваш бюджет">
-								</div>
-								<div class="order-project-form-submit">
-									<input type="submit" value="ПОКАЗАТЬ">
-								</div>
-							</form>
-						</div>
-						<div class="order-project-form-right-2">
-							<div class="order-project-form-right-up-2">
-								<div class="banner-2-1">
-									<button>
-										<img src="img/banner-2/banner-2-1.png">
-										<div class="banner-fon-2-1">
-											<p>Логотип в 1 клик</p>
-											<p>21 400 р.</p>
-										</div>
-									</button>
-								</div>
-								<div class="banner-2-2">
-									<button>
-										<img src="img/banner-2/banner-2-2.png">
-										<div class="banner-fon-2-2">
-											<p>Год бесплатных проектов</p>
-											<p>49 400 р.</p>
-										</div>
-									</button>
-								</div>
-								<div class="banner-2-3">
-									<button>
-										<img src="img/banner-2/banner-2-3.png">
-									</button>
-								</div>
-							</div>
-							<div class="order-project-form-right-down-2">
-								<div class="banner-2-4">
-									<button>
-										<img src="img/banner-2/banner-2-4.png">
-									</button>
-								</div>
-								<div class="banner-2-5">
-									<button>
-										<img src="img/banner-2/banner-2-5.png">
-										<div class="banner-fon-2-5">
-											<p>Лейдинг или страница сайта</p>
-											<p>25 000 p.</p>
-										</div>
-									</button>
-								</div>
-								<div class="banner-2-6">
-									<button>
-										<img src="img/banner-2/banner-2-6.png">
-										<div class="banner-fon-2-6">
-											<p>Найминг</p>
-											<p>18 000 p.</p>
-										</div>
-									</button>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -254,27 +160,27 @@
 								<p>Примеры проектов:</p>
 							</div>
 							<div class="searching-results-block-example">
-								<button class="searching-results-block-example-1">
+								<a href="#" class="searching-results-block-example-1">
 									<img src="img/result/result-1.png">
 									<div class="searching-results-block-example-fon-1"></div>
 									<div class="searching-results-block-example-fon-arrow-1">
 										<img src="img/result/result-0.png">
 									</div>
-								</button>
-								<button class="searching-results-block-example-2">
+								</a>
+								<a href="#" class="searching-results-block-example-2">
 									<img src="img/result/result-2.png">
 									<div class="searching-results-block-example-fon-2"></div>
 									<div class="searching-results-block-example-fon-arrow-2">
 										<img src="img/result/result-0.png">
 									</div>
-								</button>
-								<button class="searching-results-block-example-3">
+								</a>
+								<a href="#" class="searching-results-block-example-3">
 									<img src="img/result/result-2.png">
 									<div class="searching-results-block-example-fon-3"></div>
 									<div class="searching-results-block-example-fon-arrow-3">
 										<img src="img/result/result-0.png">
 									</div>
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -306,7 +212,7 @@
 							<hr>
 						</div>
 						<p>стоимость: 15 000 р.</p>
-						<button>ЗАКАЗАТЬ</button>
+						<a href="#">ЗАКАЗАТЬ</a>
 					</div>
 					<div class="additional-offers-2">
 						<p>Базовый</p>
@@ -322,7 +228,7 @@
 							<hr>
 						</div>
 						<p>стоимость: 25 000 р.</p>
-						<button>ЗАКАЗАТЬ</button>
+						<a href="#">ЗАКАЗАТЬ</a>
 					</div>
 					<div class="additional-offers-3">
 						<p>Премиум</p>
@@ -338,12 +244,12 @@
 							<hr>
 						</div>
 						<p>стоимость: 30 000 р.</p>
-						<button>ЗАКАЗАТЬ</button>
+						<a href="#">ЗАКАЗАТЬ</a>
 					</div>
 					<div class="additional-offers-recomend">
 						<p>РЕКОМЕНДУЕМ:</p>
 					</div>
-					<div class="additional-offers-4">
+					<div class="additional-offers-4 bordered">
 						<p>Лого в один клик</p>
 						<p>срок: 10 дней;</p>
 						<div class="additional-offers-1-hr-2">
@@ -354,7 +260,7 @@
 							<hr>
 						</div>
 						<p>стоимость: 21 400 р.</p>
-						<button>ЗАКАЗАТЬ</button>
+						<a href="#">ЗАКАЗАТЬ</a>
 					</div>
 				</div>
 			</div>
@@ -366,7 +272,7 @@
 				<div class="advantages">
 					<div class="block-num">
 						<div class="block-number">
-							<p>.02</p>
+							<p>.01</p>
 						</div>
 						<div class="block-head">
 							<h6>ПРЕИМУЩЕСТВА</h6>
@@ -414,7 +320,7 @@
 				<div class="examples">
 					<div class="block-num">
 						<div class="block-number">
-							<p>.03</p>
+							<p>.02</p>
 						</div>
 						<div class="block-head">
 							<h6>ПРИМЕРЫ ПРОЕКТОВ</h6>
@@ -433,7 +339,7 @@
 						</div>
 						<div class="examples-right">
 							<div id="Sitedesign" class="item_project">
-								<div class="examples-item">
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
@@ -442,8 +348,8 @@
 										<p>Кол-во решений: 15</p>
 										<p>Срок: 14 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
@@ -452,8 +358,8 @@
 										<p>Кол-во решений: 24</p>
 										<p>Срок: 22 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
@@ -462,10 +368,10 @@
 										<p>Кол-во решений: 16</p>
 										<p>Срок: 12 дней</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div id="Formstyle" class="item_project">
-								<div class="examples-item">
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
@@ -474,8 +380,8 @@
 										<p>Кол-во решений: 24</p>
 										<p>Срок: 22 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
@@ -484,8 +390,8 @@
 										<p>Кол-во решений: 15</p>
 										<p>Срок: 14 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
@@ -494,10 +400,10 @@
 										<p>Кол-во решений: 16</p>
 										<p>Срок: 12 дней</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div id="Microprojects" class="item_project">
-								<div class="examples-item">
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
@@ -506,8 +412,8 @@
 										<p>Кол-во решений: 15</p>
 										<p>Срок: 14 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
@@ -516,8 +422,8 @@
 										<p>Кол-во решений: 24</p>
 										<p>Срок: 22 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
@@ -526,10 +432,10 @@
 										<p>Кол-во решений: 16</p>
 										<p>Срок: 12 дней</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div id="Сopyrighted" class="item_project">
-								<div class="examples-item">
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
@@ -538,8 +444,8 @@
 										<p>Кол-во решений: 15</p>
 										<p>Срок: 14 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
@@ -548,8 +454,8 @@
 										<p>Кол-во решений: 24</p>
 										<p>Срок: 22 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
@@ -558,10 +464,10 @@
 										<p>Кол-во решений: 16</p>
 										<p>Срок: 12 дней</p>
 									</div>
-								</div>
+								</a>
 							</div>
 							<div id="Logo" class="item_project">
-								<div class="examples-item">
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
@@ -570,8 +476,8 @@
 										<p>Кол-во решений: 15</p>
 										<p>Срок: 14 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
@@ -580,8 +486,8 @@
 										<p>Кол-во решений: 24</p>
 										<p>Срок: 22 дней</p>
 									</div>
-								</div>
-								<div class="examples-item">
+								</a>
+								<a href="#" class="examples-item">
 									<img src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
@@ -590,7 +496,7 @@
 										<p>Кол-во решений: 16</p>
 										<p>Срок: 12 дней</p>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -608,6 +514,9 @@
 							<h3>Опытные эксперты помогут вам с выбором варианта</h3>
 							<a href="#">Подробнее...</a>
 							<h4>Сергей Кожара</h4>
+							<div class="expert-hr">
+								<hr>
+							</div>
 							<p>Креативный директор и
 									совладелец студии визуального
 									продакшена Special One</p>
@@ -659,9 +568,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="reviews">
-					<div class="block-num">
+					<div class="block-num reviews-num-position">
 						<div class="block-number">
-							<p>.04</p>
+							<p>.03</p>
 						</div>
 						<div class="block-head">
 							<h6>ОТЗЫВЫ</h6>
@@ -737,7 +646,7 @@
 						 <li><a href="#" >Конфиденциальность</a></li>
 						 <li><a href="#" >Блог</a></li>
 						 <li><a href="#" >Золотая рыбка</a></li>
-						 <li><a href="#" >Абонентское обслуживание</a></li>
+						 <li><a href="#" class="subscriber-service">Абонентское обслуживание</a></li>
 					 </ul>
 					</div>
 					<div class="footer_social">
@@ -769,6 +678,7 @@
 <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <script src="node_modules/jquery.dotdotdot/dist/jquery.dotdotdot.js"></script>
 <script src="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script src="js/datapicker.js"></script>
 <script src="js/mainPage.js"></script>
 </body>
 </html>

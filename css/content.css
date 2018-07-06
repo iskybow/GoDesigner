@@ -231,12 +231,7 @@
 	color: #FFFFFF;
 }
 
-.order-project-form-submit input:hover {
-	background-color: #FF5B6F;
-	color: #FFFFFF;
-}
-
-.order-project-form-submit input:focus {
+.order-project-form-submit input.active {
 	background-color: #BC344C;
 	color: #FFFFFF;
 }
@@ -704,7 +699,7 @@
 	flex-direction: row;
 }
 
-.searching-results-block-example button {
+.searching-results-block-example a {
 	margin-right: 20px;
 	border: none;
 	outline: none;
@@ -817,6 +812,20 @@
 	margin-bottom: 20px;
 }
 
+.bordered {
+	/* Fallback dashed border
+		 - the 4px width here is overwritten with the border-image-width (if set)
+		 - the border-image-width can be omitted below if it is the same as the 4px here
+	*/
+	border: dashed 1px transparent;
+
+	/* Individual border image properties */
+	border-image-source: url("../img/border.png");
+	border-image-slice: 1;
+	border-image-repeat: round;
+}
+
+
 .additional-offers-1 p,
 .additional-offers-2 p,
 .additional-offers-3 p,
@@ -871,10 +880,10 @@
 	background-color: #BDBDBD;
 }
 
-.additional-offers-1 button,
-.additional-offers-2 button,
-.additional-offers-3 button,
-.additional-offers-4 button {
+.additional-offers-1 a,
+.additional-offers-2 a,
+.additional-offers-3 a,
+.additional-offers-4 a {
 	border: none;
 	background-color: #EB344A;
 	width: 110px;
@@ -884,26 +893,31 @@
 	font-size: 12px;
 	outline: none;
 	cursor: pointer;
+	margin: 15px;
+	text-decoration: none;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
-.additional-offers-1 button:active,
-.additional-offers-2 button:active,
-.additional-offers-3 button:active,
-.additional-offers-4 button:active {
+.additional-offers-1 a:active,
+.additional-offers-2 a:active,
+.additional-offers-3 a:active,
+.additional-offers-4 a:active {
 	background-color: #EB344A;
 }
 
-.additional-offers-1 button:hover,
-.additional-offers-2 button:hover,
-.additional-offers-3 button:hover,
-.additional-offers-4 button:hover {
+.additional-offers-1 a:hover,
+.additional-offers-2 a:hover,
+.additional-offers-3 a:hover,
+.additional-offers-4 a:hover {
 	background-color: #FF5B6F;
 }
 
-.additional-offers-1 button:focus,
-.additional-offers-2 button:focus,
-.additional-offers-3 button:focus,
-.additional-offers-4 button:focus {
+.additional-offers-1 a:focus,
+.additional-offers-2 a:focus,
+.additional-offers-3 a:focus,
+.additional-offers-4 a:focus {
 	background-color: #BC344C;
 }
 
@@ -940,6 +954,11 @@
 .block-num {
 	display: flex;
 	flex-direction: row;
+}
+
+.reviews-num-position {
+	width: 100%;
+	margin-left: 90px;
 }
 
 .block-number p {
@@ -1098,14 +1117,17 @@
 .examples-item {
 	box-shadow: 0 2px 7px rgba(96, 105, 127, 0.4);
 	margin-right: 20px;
+	text-decoration: none;
 }
 
 .site-bg_white .examples-item {
 	background-color: #F2F2F2;
+	text-decoration: none;
 }
 
 .site-bg_black .examples-item {
-	background-color: #4D5568;
+	background-color: #5b5f6a;
+	text-decoration: none;
 	opacity: 0.5;
 }
 
@@ -1230,9 +1252,23 @@
 	width: 220px;
 }
 
-/*.experts_2 {*/
-	/*display: none;*/
-/*}*/
+.expert-hr hr {
+	border: none;
+	width: 107px;
+	height: 2px;
+	background-color: #EB344A;
+	position: absolute;
+	left: 405px;
+	top: 345px;
+}
+
+.site-bg_white .expert-hr hr {
+	background-color: #EB344A;
+}
+
+.site-bg_black .expert-hr hr {
+	background-color: #4FE1CF;
+}
 
 /*statistics-section*/
 
@@ -1291,13 +1327,13 @@ width: 145px;
 /*reviews-section*/
 
 .reviews {
-	width: 700px;
-	margin: 0 auto;
+	align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 40px 40px;
 }
-
-/*.reviews-section {*/
-	/*background-color: #DFE0E3;*/
-/*}*/
 
 .reviews .examples-head-hr {
 	width: 70px;
@@ -1309,6 +1345,7 @@ width: 145px;
 	flex-wrap: wrap;
 	margin-top: 50px;
 	justify-content: center;
+	width: 700px;
 }
 
 .review {
@@ -1320,10 +1357,8 @@ width: 145px;
 }
 
 .review img {
-	/*display: flex;*/
 	float: left;
 	margin-right: 20px;
-	/*margin-bottom: 60px;*/
 }
 
 .site-bg_white .review p {
@@ -1344,13 +1379,11 @@ width: 145px;
 	transform: scale(1);
 }
 
-/*.site-bg_white .review p {*/
-	/*color: #000000;*/
-/*}*/
-
-/*.site-bg_black .review p {*/
-	/*color: #FFFFFF;*/
-/*}*/
+@media (max-width: 1200px) {
+	.expert-hr hr {
+		left: 335px;
+	}
+}
 
 @media (max-width: 959px) {
 	.order-project-form {
@@ -1414,6 +1447,10 @@ width: 145px;
 	.experts-section {
 		height: 550px;
 	}
+	.expert-hr hr {
+		left: 315px;
+		top: 380px;
+	}
 }
 
 @media (max-width: 770px) {
@@ -1428,6 +1465,10 @@ width: 145px;
 	}
 	.expert_info h4 {
 		margin-top: 30px;
+	}
+	.expert-hr hr {
+		left: 225px;
+		top: 265px;
 	}
 }
 
@@ -1521,5 +1562,12 @@ width: 145px;
 	}
 	.banner-2-1, .banner-2-2, .banner-2-3, .banner-2-4, .banner-2-5, .banner-2-6 {
 		margin: 10px 0;
+	}
+	.expert-hr hr {
+		left: 230px;
+		bottom: 120px;
+	}
+	.expert-hr hr {
+		display: none;
 	}
 }

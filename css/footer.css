@@ -27,6 +27,14 @@
 	flex-direction: column;
 }
 
+.site-bg_white .footer_menu-ul li .subscriber-service {
+	color: #00AAA0;
+}
+
+.site-bg_black .footer_menu-ul li .subscriber-service {
+	color: #00AAA0;
+}
+
 .footer_menu {
 margin-right: 50px;
 }
@@ -38,7 +46,6 @@ margin-right: 50px;
 .footer_menu-ul li a{
 	font-family: ibm_plex_sans_regular, sans-serif;
 	font-size: 16px;
-	color: #272B34;
 }
 
 .site-bg_white .footer_menu-ul li a{
@@ -53,6 +60,7 @@ margin-right: 50px;
 	color: #00AAA0;
 	text-decoration: none;
 }
+
 
 .social_social ul {
 	list-style: none;

@@ -17,7 +17,7 @@ function openExamples(evt, buttonName) {
     evt.currentTarget.className += " active";
 }
 
-$( function() {
+$(function () {
     // theme switcher
     $(document).on('click', '.js_themeSwitcher', function () {
         var themeBody = $('.js_themeBody');
@@ -28,7 +28,7 @@ $( function() {
     document.getElementById("defaultOpen").click();
 
     // calendar
-    $( ".datepicker" ).datepicker();
+    $(".datepicker").datepicker();
 
     // first slider
     $('.experts').slick({
@@ -79,7 +79,8 @@ $( function() {
     // text truncate for slider with feedbacks
     $(".review").dotdotdot({
         // Options go here
-        callback: function( isTruncated ) {},
+        callback: function (isTruncated) {
+        },
         /* Function invoked after truncating the text.
                          Inside this function, "this" refers to the wrapper. */
 
@@ -115,12 +116,41 @@ $( function() {
 
     $('.selectUl').mCustomScrollbar();
 
+    $(document).on('change', '.js_inputVal', function () {
+        var inputVal = $('.js_inputVal');
+        var counter = 0;
+        inputVal.each(function () {
+            if ($(this).val()!== "") {
+                counter++;
+            }
+        });
+        if (counter === inputVal.length) {
+           $('.js_submitVal').removeAttr('disabled').addClass('active');
+
+        }
     });
+
+
+
+});
 
 $(document).on('click', '.selectLi', function (e) {
     e.stopPropagation();
     var parent = $(this).closest('.select-block');
-    parent.find('input').val($(this).text());
+    parent.find('.select-text').val($(this).text());
     parent.removeClass('select-block-active');
     parent.find($('.selectUl')).fadeOut();
+    console.log(parent.find('.select-text').val())
 });
+
+
+
+$(document).click(function (event) {
+    if ($(event.target).closest('.select-block').length) return;
+    $('.selectUl').hide("slow");
+    event.stopPropagation();
+});
+
+
+$.datepicker.setDefaults($.datepicker.regional["ru"]);
+

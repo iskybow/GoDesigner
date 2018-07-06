@@ -288,7 +288,7 @@
 
 .slick-prev_experts
 {
-    left: 34.8%;
+    left: 34.3%;
     z-index: 2;
     background-color: #60697F;
 }
@@ -311,7 +311,7 @@
 
 .slick-next_experts
 {
-    right: 54.7%;
+    right: 55.3%;
     z-index: 2;
     background-color: #60697F;
 }
@@ -420,21 +420,30 @@
     color: #4FE1CF;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1200px) {
     .slick-prev_experts {
-        left: 41.6%;
+        left: 33.8%;
     }
     .slick-next_experts {
-        right: 41.7%;
+        right: 53.9%;
+    }
+}
+
+@media (max-width: 959px) {
+    .slick-prev_experts {
+        left: 41.8%;
+    }
+    .slick-next_experts {
+        right: 41.8%;
     }
 }
 
 @media (max-width: 770px) {
     .slick-prev_experts {
-        left: 38.7%;
+        left: 39.5%;
     }
     .slick-next_experts {
-        right: 39.1%;
+        right: 39.8%;
     }
 }
 
