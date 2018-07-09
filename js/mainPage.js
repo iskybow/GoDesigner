@@ -10,12 +10,16 @@ function openExamples(evt, buttonName) {
     // Get all elements with class="btn-project" and remove the class "active"
     btn_project = document.getElementsByClassName("btn_project");
     for (i = 0; i < btn_project.length; i++) {
-        btn_project[i].className = btn_project[i].className.replace(" active", "");
+        btn_project[i].className = btn_project[i].className.replace(" activeBut", "");
     }
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(buttonName).style.display = "flex";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += " activeBut";
 }
+
+$(function () {
+    document.getElementById("defaultOpen").click();
+});
 
 $(function () {
     // theme switcher
@@ -24,8 +28,6 @@ $(function () {
         themeBody.toggleClass('site-bg_white');
         themeBody.toggleClass('site-bg_black');
     });
-
-    document.getElementById("defaultOpen").click();
 
     // calendar
     $(".datepicker").datepicker();
@@ -114,8 +116,6 @@ $(function () {
         parent.find($('.selectUl')).fadeIn();
     });
 
-    $('.selectUl').mCustomScrollbar();
-
     $(document).on('change', '.js_inputVal', function () {
         var inputVal = $('.js_inputVal');
         var counter = 0;
@@ -154,3 +154,16 @@ $(document).click(function (event) {
 
 $.datepicker.setDefaults($.datepicker.regional["ru"]);
 
+
+// после этого коментария
+
+$(document).ready(function() {
+    $('.js_select2').select2({
+        placeholder: "Что вам нужно?",
+        width: '150px',
+    });
+});
+
+$(document).on("select2:open", "select", function() {
+    $('.select2-results').mCustomScrollbar();
+});

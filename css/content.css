@@ -1099,7 +1099,7 @@
 	border: 1px solid #EB344A;
 }
 
-.examples-left button.active {
+.examples-left button.activeBut {
 	border: 1px solid #EB344A;
 	outline: none;
 }
@@ -1118,6 +1118,7 @@
 	box-shadow: 0 2px 7px rgba(96, 105, 127, 0.4);
 	margin-right: 20px;
 	text-decoration: none;
+	width: 198px;
 }
 
 .site-bg_white .examples-item {
@@ -1131,6 +1132,10 @@
 	opacity: 0.5;
 }
 
+.examples-img {
+	width: 198px;
+	height: 212px;
+}
 
 .site-bg_white .examples-item:hover {
 	box-shadow: 0 10px 15px rgba(96, 105, 127, 0.3);

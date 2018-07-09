@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/slick-theme.css"/>
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/select2.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Go Designer</title>
 </head>
@@ -48,6 +49,8 @@
 			</div>
 		</div>
 	</header>
+	
+	<!--в order-project select-->
 	<section class="order-project">
 		<div class="container">
 			<div class="row">
@@ -60,23 +63,24 @@
 						<div class="order-project-form-left">
 							<form id="product">
 								<div class="select-block">
-									<div class="selectInput">
-										<input type="text" id="select" class="select-text js_clickSelect js_inputVal" autocomplete="off" value="" required placeholder="Что вам нужно?">
-									</div>
-									<ul class="selectUl ulNoneBlock js_clickSelect">
-										<li class="selectLi" value="logo">Лого</li>
-										<li class="selectLi" value="firmstyle">Фирменный стиль</li>
-										<li class="selectLi" value="leaflets">Листовка</li>
-										<li class="selectLi" value="advertising">Реклама</li>
-										<li class="selectLi" value="site">Сайт</li>
-										<li class="selectLi" value="copyrighted">Копирай</li>
-										<li class="selectLi" value="logo2">Лого</li>
-										<li class="selectLi" value="firmstyle2">Фирменный стиль</li>
-										<li class="selectLi" value="leaflets2">Листовка</li>
-										<li class="selectLi" value="advertising2">Реклама</li>
-										<li class="selectLi" value="site2">Сайт</li>
-										<li class="selectLi" value="copyrighted2">Копирай</li>
-									</ul>
+									
+									<!--вот этот-->
+									
+									<select class="js_select2 js_inputVal" required>
+										<option></option>
+										<option value="logo">Лого</option>
+										<option value="firmstyle">Фирменный стиль</option>
+										<option value="leaflets">Листовка</option>
+										<option value="advertising">Реклама</option>
+										<option value="site">Сайт</option>
+										<option value="copyrighted">Копирай</option>
+										<option value="logo2">Лого</option>
+										<option value="firmstyle2">Фирменный стиль</option>
+										<option value="leaflets2">Листовка</option>
+										<option value="advertising2">Реклама</option>
+										<option value="site2">Сайт</option>
+										<option value="copyrighted2">Копирай</option>
+									</select>
 								</div>
 								<div class="order-project-form-date">
 									<div class="order-project-form-datepicker">
@@ -340,7 +344,7 @@
 						<div class="examples-right">
 							<div id="Sitedesign" class="item_project">
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-1.png">
+									<img class="examples-img" src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
 										<hr>
@@ -350,7 +354,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-2.png">
+									<img class="examples-img" src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
 										<hr>
@@ -360,7 +364,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-3.png">
+									<img class="examples-img" src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
 										<hr>
@@ -372,7 +376,7 @@
 							</div>
 							<div id="Formstyle" class="item_project">
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-2.png">
+									<img class="examples-img" src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
 										<hr>
@@ -382,7 +386,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-1.png">
+									<img class="examples-img" src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
 										<hr>
@@ -392,7 +396,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-3.png">
+									<img class="examples-img" src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
 										<hr>
@@ -404,7 +408,7 @@
 							</div>
 							<div id="Microprojects" class="item_project">
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-1.png">
+									<img class="examples-img" src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
 										<hr>
@@ -414,7 +418,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-2.png">
+									<img class="examples-img" src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
 										<hr>
@@ -424,7 +428,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-3.png">
+									<img class="examples-img" src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
 										<hr>
@@ -436,7 +440,7 @@
 							</div>
 							<div id="Сopyrighted" class="item_project">
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-1.png">
+									<img class="examples-img" src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
 										<hr>
@@ -446,7 +450,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-2.png">
+									<img class="examples-img" src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
 										<hr>
@@ -456,7 +460,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-3.png">
+									<img class="examples-img" src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
 										<hr>
@@ -468,7 +472,7 @@
 							</div>
 							<div id="Logo" class="item_project">
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-1.png">
+									<img class="examples-img" src="img/examples/item-1.png">
 									<div class="item-text">
 										<h6>«Smart Sites»</h6>
 										<hr>
@@ -478,7 +482,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-2.png">
+									<img class="examples-img" src="img/examples/item-2.png">
 									<div class="item-text">
 										<h6>«Сайт ведущего»</h6>
 										<hr>
@@ -488,7 +492,7 @@
 									</div>
 								</a>
 								<a href="#" class="examples-item">
-									<img src="img/examples/item-3.png">
+									<img class="examples-img" src="img/examples/item-3.png">
 									<div class="item-text">
 										<h6>«Агенство Method»</h6>
 										<hr>
@@ -678,6 +682,7 @@
 <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 <script src="node_modules/jquery.dotdotdot/dist/jquery.dotdotdot.js"></script>
 <script src="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script src="js_plugins/select2/select2.js"></script>
 <script src="js/datapicker.js"></script>
 <script src="js/mainPage.js"></script>
 </body>
