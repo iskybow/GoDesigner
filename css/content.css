@@ -659,7 +659,7 @@
 	color: #00AAA0;
 }
 
-.searching-results-block-left button {
+.searching-results-block-left .searching-results-btn {
 	margin-top: 40px;
 	border: none;
 	background-color: #EB344A;
@@ -670,17 +670,21 @@
 	font-size: 12px;
 	outline: none;
 	cursor: pointer;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.searching-results-block-left button:active {
+.searching-results-block-left .searching-results-btn:active {
 	background-color: #EB344A;
 }
 
-.searching-results-block-left button:hover {
+.searching-results-block-left .searching-results-btn:hover {
 	background-color: #FF5B6F;
 }
 
-.searching-results-block-left button:focus {
+.searching-results-block-left .searching-results-btn:focus {
 	background-color: #BC344C;
 }
 
