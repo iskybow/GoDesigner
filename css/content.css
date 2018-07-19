@@ -632,13 +632,14 @@
 .searching-results-block {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .searching-results-block-left {
 	display: flex;
 	flex-direction: column;
 	padding-top: 60px;
+	margin-right: 150px;
 }
 
 .searching-results-block-left p {
@@ -701,10 +702,12 @@
 .searching-results-block-example {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .searching-results-block-example a {
 	margin-right: 20px;
+	margin-bottom: 20px;
 	border: none;
 	outline: none;
 	background: none;
