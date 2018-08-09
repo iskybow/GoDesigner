@@ -668,3 +668,9 @@
 		display: none!important;
 	}
 }
+
+@media (max-width: 770px) {
+    .dots-review {
+        bottom: -45px;
+    }
+}
