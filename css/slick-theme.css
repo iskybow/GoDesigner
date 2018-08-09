@@ -429,13 +429,16 @@
     }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 992px) {
     .slick-prev_experts {
         left: 41.8%;
     }
     .slick-next_experts {
         right: 41.8%;
     }
+	.slick-prev_review, .slick-next_review {
+		display: none;
+	}
 }
 
 @media (max-width: 770px) {
@@ -660,3 +663,8 @@
     color: #4FE1CF;
 }
 
+@media (max-width: 992px) {
+	.slick-prev_review, .slick-next_review {
+		display: none!important;
+	}
+}

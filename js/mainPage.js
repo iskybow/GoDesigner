@@ -89,7 +89,7 @@ $(function () {
         ellipsis: "\u2026 ",
         /* The text to add as ellipsis. */
 
-        height: null,
+        height: 150,
         /* The (max-)height for the wrapper:
                          null: measure the CSS (max-)height ones;
                          a number: sets a specific height in pixels;
@@ -155,8 +155,6 @@ $(document).click(function (event) {
 $.datepicker.setDefaults($.datepicker.regional["ru"]);
 
 
-// после этого коментария
-
 $(document).ready(function() {
     $('.js_select2').select2({
         placeholder: "Что вам нужно?",
@@ -166,4 +164,16 @@ $(document).ready(function() {
 
 $(document).on("select2:open", "select", function() {
     $('.select2-results').mCustomScrollbar();
+});
+
+$(document).on('click', '.mobile-hamburger', function (e) {
+    var hamburgerMobile = $('.mobile-hamburger');
+    var mobileOpenMenu = $('.mobile-menu');
+    hamburgerMobile.toggleClass('mobile-hamburger-open');
+    // mobileOpenMenu.toggleClass('mobile-menu-open');
+    if ( hamburgerMobile.hasClass("mobile-hamburger-open") ) {
+        mobileOpenMenu.fadeIn("slow");
+    } else {
+        mobileOpenMenu.fadeOut("slow");
+    }
 });
