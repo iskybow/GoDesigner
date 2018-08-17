@@ -43,6 +43,10 @@ margin-right: 50px;
 	list-style: none;
 }
 
+.footer_menu ul li {
+	margin-bottom: 10px;
+}
+
 .footer_menu-ul li a{
 	font-family: ibm_plex_sans_regular, sans-serif;
 	font-size: 16px;
@@ -104,7 +108,7 @@ margin-right: 50px;
 }
 
 .footer_coop {
-	margin-left: 220px;
+	margin-left: 218px;
 }
 
 .footer_coop p {
@@ -118,7 +122,7 @@ margin-right: 50px;
 	width: 65%;
 	height: 1px;
 	background-color: #60697F;
-	margin-left: 220px;
+	margin-left: 218px;
 	margin-bottom: 20px;
 }
 

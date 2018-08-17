@@ -288,7 +288,7 @@
 
 .slick-prev_experts
 {
-    left: 34.3%;
+    left: 34.8%;
     z-index: 2;
     background-color: #60697F;
 }
@@ -302,16 +302,26 @@
 }
 .slick-prev_experts:before
 {
-    content: '‹';
+    content: '';
+    background: url("../img/arrow-l.png") no-repeat 50% 50%;
+    z-index: 999999;
+    padding: 0 7px;
+    position: relative;
+    top: 5px;
 }
 [dir='rtl'] .slick-prev_experts:before
 {
-    content: '‹';
+    content: '';
+    background: url("../img/arrow-l.png") no-repeat 50% 50%;
+    z-index: 999999;
+    padding: 0 7px;
+    position: relative;
+    top: 5px;
 }
 
 .slick-next_experts
 {
-    right: 55.3%;
+    right: 54.7%;
     z-index: 2;
     background-color: #60697F;
 }
@@ -322,11 +332,21 @@
 }
 .slick-next_experts:before
 {
-    content: '›';
+    content: '';
+    background: url("../img/arrow-r.png") no-repeat 50% 50%;
+    z-index: 999999;
+    padding: 0 7px;
+    position: relative;
+    top: 5px;
 }
 [dir='rtl'] .slick-next_experts:before
 {
-    content: '›';
+    content: '';
+    background: url("../img/arrow-r.png") no-repeat 50% 50%;
+    z-index: 999999;
+    padding: 0 7px;
+    position: relative;
+    top: 5px;
 }
 
 /* Dots */
@@ -544,11 +564,21 @@
 }
 .slick-prev_review:before
 {
-    content: '‹';
+    content: '';
+    background: url("../img/arrow-l.png") no-repeat 50% 50%;
+    z-index: 999999;
+    padding: 0 7px;
+    position: relative;
+    top: 5px;
 }
 [dir='rtl'] .slick-prev_review:before
 {
-    content: '‹';
+    content: '';
+    background: url("../img/arrow-l.png") no-repeat 50% 50%;
+    z-index: 999999;
+    padding: 0 7px;
+    position: relative;
+    top: 5px;
 }
 
 .slick-next_review
@@ -565,11 +595,21 @@
 }
 .slick-next_review:before
 {
-    content: '›';
+    content: '';
+    background: url("../img/arrow-r.png") no-repeat 50% 50%;
+    z-index: 999999;
+    padding: 0 7px;
+    position: relative;
+    top: 5px;
 }
 [dir='rtl'] .slick-next_review:before
 {
-    content: '›';
+    content: '';
+    background: url("../img/arrow-r.png") no-repeat 50% 50%;
+    z-index: 999999;
+    padding: 0 7px;
+    position: relative;
+    top: 5px;
 }
 
 /* Dots */

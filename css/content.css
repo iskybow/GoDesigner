@@ -628,6 +628,7 @@
 .searching-results-head-hr {
 	background-color: #00AAA0;
 	width: 70px;
+	height: 1px;
 }
 
 .searching-results-block {
@@ -788,6 +789,7 @@
 
 .additional-offers-head {
 	font-family: ibm_plex_sans_bold, sans-serif;
+	margin-bottom: 50px;
 }
 
 .site-bg_white .additional-offers-head h6 {
@@ -801,6 +803,7 @@
 .additional-offers-head-hr {
 	background-color: #00AAA0;
 	width: 100px;
+	height: 1px;
 }
 
 .additional-offers-1,
@@ -819,7 +822,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-bottom: 20px;
 }
 
@@ -855,7 +858,7 @@
 .additional-offers-3 p:first-child,
 .additional-offers-4 p:first-child {
 	margin-left: 25px;
-	width: 301px;
+	width: 131px;
 	color: #0F1F13;
 	text-align: center;
 	text-overflow: ellipsis;
@@ -864,6 +867,7 @@
 
 .additional-offers-4 p:first-child {
 	margin-right: 26px;
+	width: 150px;
 }
 
 .site-bg_white .additional-offers-1 p:first-child,
@@ -1005,6 +1009,7 @@
 .advantages-head-hr {
 	background-color: #00AAA0;
 	width: 60px;
+	height: 1px;
 }
 
 .advantages-items {
@@ -1063,6 +1068,7 @@
 .examples-head-hr {
 	background-color: #00AAA0;
 	width: 80px;
+	height: 1px;
 }
 
 .examples-block {
@@ -1364,6 +1370,7 @@ width: 145px;
 
 .reviews .examples-head-hr {
 	width: 70px;
+	height: 1px;
 }
 
 .reviews_block {

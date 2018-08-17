@@ -248,25 +248,29 @@ body {
 
 .nav-menu-number {
 	text-align: right;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 }
 
 .nav-menu-number .nav-number {
 	margin: 0;
+	margin-bottom: 5px;
 	width: 125px;
 }
 
 .nav-menu-button {
 	width: 136px;
-	height: 29px;
+	height: 45px;
+	display: flex;
 }
 
 .nav-menu-button .nav-order {
 	background: #EB344A;
 	box-shadow: 0 0 10px rgba(235, 52, 74, 0.5);
 	border: none;
-	width: 135px;
-	height: 36px;
+	/*width: 135px;*/
+	/*height: 36px;*/
 	color: #fff;
 	font-family: ibm_plex_sans_semi-bold, sans-serif;
 	font-style: normal;
@@ -297,6 +301,10 @@ body {
 	display: flex;
 	align-items: center;
 	margin: 0;
+}
+
+.nav-menu-number p:last-child img {
+	margin-right: 8px;
 }
 
 .site-bg_white .nav-number {
@@ -521,6 +529,23 @@ body {
 
 .site-bg_black .profile-ul {
 	background-color: #282828;
+}
+
+.site-bg_black-datepicker {
+	background-color: #272B34;
+}
+
+.site-bg_black-datepicker table {
+	color: #757575;
+}
+
+/*.site-bg_white .select2-dropdown {*/
+	/*background-color: #e2e2e7;*/
+/*}*/
+
+.site-bg_black-select2 {
+	background-color: #272B34;
+	color: #757575;
 }
 
 .site-bg_white .mobile-menu-li a {

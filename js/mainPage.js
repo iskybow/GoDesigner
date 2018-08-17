@@ -25,8 +25,26 @@ $(function () {
     // theme switcher
     $(document).on('click', '.js_themeSwitcher', function () {
         var themeBody = $('.js_themeBody');
-        themeBody.toggleClass('site-bg_white');
-        themeBody.toggleClass('site-bg_black');
+        if(themeBody.hasClass('site-bg_white')) {
+            // Переключаем на темную тему
+            themeBody.toggleClass('site-bg_white');
+            themeBody.toggleClass('site-bg_black');
+            $('.js_select2').select2({
+                placeholder: "Что вам нужно?",
+                width: '150px',
+                dropdownCssClass: "site-bg_black-select2"
+            });
+            $('#ui-datepicker-div').addClass('site-bg_black-datepicker');
+        } else {
+            // Переключаем на светлую тему
+            themeBody.toggleClass('site-bg_white');
+            themeBody.toggleClass('site-bg_black');
+            $('.js_select2').select2({
+                placeholder: "Что вам нужно?",
+                width: '150px'
+            });
+            $('#ui-datepicker-div').removeClass('site-bg_black-datepicker');
+        }
     });
 
     // calendar
@@ -158,8 +176,14 @@ $.datepicker.setDefaults($.datepicker.regional["ru"]);
 $(document).ready(function() {
     $('.js_select2').select2({
         placeholder: "Что вам нужно?",
-        width: '150px',
+        width: '150px'
     });
+
+    // if ( $('.js_themeBody').hasClass("site-bg_black") ) {
+    //     $('.select2-dropdown').addClass('site-bg_black-select');
+    // } else {
+    //     // mobileOpenMenu.fadeOut("slow");
+    // }
 });
 
 $(document).on("select2:open", "select", function() {

@@ -59,6 +59,15 @@
   width: 100%;
   z-index: 1051; }
 
+.site-bg_white .select2-dropdown {
+  background-color: #e2e2e7;
+}
+
+.site-bg_black .select2-dropdown {
+  background-color: #282828;
+}
+
+
 .select2-results {
   display: block;
   height: 165px;
