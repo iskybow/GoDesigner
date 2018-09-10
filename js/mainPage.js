@@ -163,11 +163,11 @@ $(document).on('click', '.selectLi', function (e) {
 
 
 
-$(document).click(function (event) {
-    if ($(event.target).closest('.select-block').length) return;
-    $('.selectUl').hide("slow");
-    event.stopPropagation();
-});
+// $(document).click(function (event) {
+//     if ($(event.target).closest('.select-block').length) return;
+//     $('.selectUl').hide("slow");
+//     event.stopPropagation();
+// });
 
 
 $.datepicker.setDefaults($.datepicker.regional["ru"]);
@@ -178,12 +178,10 @@ $(document).ready(function() {
         placeholder: "Что вам нужно?",
         width: '150px'
     });
-
-    // if ( $('.js_themeBody').hasClass("site-bg_black") ) {
-    //     $('.select2-dropdown').addClass('site-bg_black-select');
-    // } else {
-    //     // mobileOpenMenu.fadeOut("slow");
-    // }
+    $('.js_select2').on('select2:open', function (e) {
+        $('.select2-dropdown').hide();
+        $('.select2-dropdown').slideDown(300);
+    });
 });
 
 $(document).on("select2:open", "select", function() {

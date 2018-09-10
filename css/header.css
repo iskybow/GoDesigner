@@ -505,6 +505,10 @@ body {
 	color: #60697F;
 }
 
+.site-bg_white .select2-container--default .select2-selection--single:hover {
+	border: 1px solid #8F9EBF;
+}
+
 .site-bg_white .select2-container--default .select2-selection--single {
 	background-color: #fff;
 	border: 1px solid #CFD1D9;
@@ -653,4 +657,8 @@ body {
 	.mobile-menu {
 		top: 275px;
 	}
+}
+
+.review.slick-slide {
+	left: 0!important;
 }

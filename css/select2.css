@@ -147,9 +147,10 @@
   outline: none;
 }
   .select2-container--default .select2-selection--single .select2-selection__rendered {
+    margin-left: 10px;
+    margin-right: 10px;
     color: #444;
     line-height: 28px;
-  margin-left: 10px;
     color: #757575;
   }
   .select2-container--default .select2-selection--single .select2-selection__clear {
@@ -266,7 +267,9 @@
   border-bottom-right-radius: 0; }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
-  border: 1px solid #aaa; }
+  border: 1px solid #aaa;
+  outline: none;
+}
 
 .select2-container--default .select2-search--inline .select2-search__field {
   background: transparent;
